@@ -146,10 +146,10 @@
                         <p class="lead d-inline-block">I designed the MVP-V1 of Smart Bricks to empower real estate investors with AI-driven analytics, enabling informed decision-making. This strategic UX design <span style="color: rgb(246, 133, 17);">boosted landing page conversions by 70%</span> and <span style="color: rgb(12, 237, 166);">increased closed deals from 6% to 28%</span> after one month.</p>
                         <figure class="figure d-block flex-fill">
                             <figcaption class="figure-caption blockquote-footer mt-0 mb-4">Associated with&nbsp;<span><a class="fw-semibold" href="https://www.linkedin.com/in/nada-hazem-635408127/" target="_blank" rel="external">Nada Hazem</a></span>&nbsp;Smart Bricks' CTO | Product Consultant</figcaption>
-                        </figure><button class="btn btn-outline-primary rounded-pill" type="button" data-bs-target="#modal-1" data-bs-toggle="modal">Read the full story<span class="ms-2"></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" data-bss-hover-animate="swing" style="margin-top: -3px;">
+                        </figure><a class="btn btn-outline-primary open-modal-btn rounded-pill" role="button" href="portfolio/smart-bricks.html" data-case-study="portfolio/smart-bricks.html">Read the full story<span class="ms-2"></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" data-bss-hover-animate="swing" style="margin-top: -3px;">
                                 <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                                <path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"></path>
-                            </svg></button>
+                                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
+                            </svg></a>
                     </div>
                 </div>
                 <div class="col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
@@ -273,9 +273,9 @@
         </div>
     </section>
     <footer class="mb-2">
-        <div class="container-fluid pt-4 pt-lg-5">
+        <div class="container-fluid pt-4 pt-lg-5 px-0">
             <hr style="border-color: rgb(255, 255, 255);border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;">
-            <div class="row gy-4 gy-md-2 row-cols-1 row-cols-md-2 mt-0 px-xl-5">
+            <div class="row gy-4 gy-md-2 row-cols-1 row-cols-md-2 mt-0 px-3 px-xl-5">
                 <div class="col d-flex justify-content-center justify-content-md-start"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/Body/Sayed-Logo.svg"></a></div>
                 <div class="col d-flex justify-content-center justify-content-md-end">
                     <p class="text-center">All Rights Reserved © 2024 Sayed Abdelaal</p>
@@ -284,7 +284,7 @@
             <div class="d-flex flex-column justify-content-start align-items-center flex-sm-row pt-3 px-xl-5"></div>
         </div>
     </footer>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+    <div class="modal fade" role="dialog" tabindex="-1" id="passwordModal" aria-labelledby="passwordModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -301,16 +301,16 @@
                                 <div style="margin-top: -3rem;">
                                     <h2 class="display-6 fw-bold mb-4">Password Please</h2>
                                     <p class="fw-light text-white-50 mb-4">Please enter the password provided in your correspondence.</p>
-                                    <form class="d-flex flex-column justify-content-center flex-wrap align-items-sm-center justify-content-xl-start align-items-xl-center py-2" method="post">
-                                        <div class="d-flex align-items-center position-relative enter-pasword mb-4"><input class="form-control rounded-pill" type="password" required="" placeholder="Enter Password"></div>
-                                        <p class="fw-light"><span class="text-white-50 me-2">Are You Hiring Manager?</span><a href="hire-me.html">Request Password</a></p>
+                                    <form class="d-flex flex-column justify-content-center flex-wrap align-items-sm-center justify-content-xl-start align-items-xl-center py-2"><input class="form-control rounded-pill" type="password" id="passwordInput" required="" placeholder="Enter Password">
+                                        <div class="text-start invalid-feedback mt-2 px-3" id="feedback"></div>
+                                        <p class="fw-light mt-3"><span class="text-white-50 me-2">Are You Hiring Manager?</span><a href="hire-me.html">Request Password</a></p>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer"><button class="btn btn-outline-primary rounded-pill" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary rounded-pill" type="button">Unlock Case Study<span class="ms-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor">
+                <div class="modal-footer"><button class="btn btn-outline-primary rounded-pill" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary rounded-pill" id="submitPassword" type="button">Unlock Case Study<span class="ms-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor">
                                 <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
                                 <path d="M352 144c0-44.2 35.8-80 80-80s80 35.8 80 80v48c0 17.7 14.3 32 32 32s32-14.3 32-32V144C576 64.5 511.5 0 432 0S288 64.5 288 144v48H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H352V144z"></path>
                             </svg></span></button></div>

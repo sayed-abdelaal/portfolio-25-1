@@ -93,7 +93,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+    <div class="modal fade" role="dialog" tabindex="-1" id="passwordModal" aria-labelledby="passwordModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -110,16 +110,16 @@
                                 <div style="margin-top: -3rem;">
                                     <h2 class="display-6 fw-bold mb-4">Password Please</h2>
                                     <p class="fw-light text-white-50 mb-4">Please enter the password provided in your correspondence.</p>
-                                    <form class="d-flex flex-column justify-content-center flex-wrap align-items-sm-center justify-content-xl-start align-items-xl-center py-2" method="post">
-                                        <div class="d-flex align-items-center position-relative enter-pasword mb-4"><input class="form-control rounded-pill" type="password" required="" placeholder="Enter Password"></div>
-                                        <p class="fw-light"><span class="text-white-50 me-2">Are You Hiring Manager?</span><a href="hire-me.html">Request Password</a></p>
+                                    <form class="d-flex flex-column justify-content-center flex-wrap align-items-sm-center justify-content-xl-start align-items-xl-center py-2"><input class="form-control rounded-pill" type="password" id="passwordInput" required="" placeholder="Enter Password">
+                                        <div class="text-start invalid-feedback mt-2 px-3" id="feedback"></div>
+                                        <p class="fw-light mt-3"><span class="text-white-50 me-2">Are You Hiring Manager?</span><a href="hire-me.html">Request Password</a></p>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer"><button class="btn btn-outline-primary rounded-pill" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary rounded-pill" type="button">Unlock Case Study<span class="ms-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor">
+                <div class="modal-footer"><button class="btn btn-outline-primary rounded-pill" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary rounded-pill" type="button" id="submitPassword">Unlock Case Study<span class="ms-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor">
                                 <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
                                 <path d="M352 144c0-44.2 35.8-80 80-80s80 35.8 80 80v48c0 17.7 14.3 32 32 32s32-14.3 32-32V144C576 64.5 511.5 0 432 0S288 64.5 288 144v48H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H352V144z"></path>
                             </svg></span></button></div>
