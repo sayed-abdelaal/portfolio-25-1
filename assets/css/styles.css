@@ -529,7 +529,7 @@ div.form-input-group {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .hero-buttons {
     display: flex;
     flex-direction: column;
@@ -559,7 +559,28 @@ div.form-input-group {
   transition: all .3s ease;
 }
 
+.card-00 {
+  border-radius: 24px;
+  /*padding: 1.5rem;*/
+  border: 1px solid rgba(255,255,255,0.22);
+  background: linear-gradient(-150deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(-150deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.00) 74%);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  height: fit-content;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
 .card-0:hover {
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: linear-gradient(-150deg, rgba(85,8,208,0.33) 0%, rgba(19, 14, 220, 0.00) 87%), linear-gradient(-150deg, rgba(142,14,220,0.33) 0%, rgba(19, 14, 220, 0.00) 71%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.card-00:hover {
   border-radius: 24px;
   border: 1px solid rgba(255,255,255,0.2);
   background: linear-gradient(-150deg, rgba(85,8,208,0.33) 0%, rgba(19, 14, 220, 0.00) 87%), linear-gradient(-150deg, rgba(142,14,220,0.33) 0%, rgba(19, 14, 220, 0.00) 71%);
@@ -952,9 +973,6 @@ div.column-counter {
   padding: 0;
   margin: 0;
   width: auto;
-}
-
-.section {
 }
 
 .fixed-menu a.side-nav-btn {
