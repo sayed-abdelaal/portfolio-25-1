@@ -1,0 +1,36 @@
+.infinite-scroller {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+}
+
+.infinite-scroller .scrollable {
+  display: flex;
+  width: fit-content;
+  animation: slide-to-left 30s linear infinite;
+}
+
+.infinite-scroller.pause-on-hover .scrollable:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide-to-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.infinite-scroller .scrollable > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100vw;
+}
+
+.infinite-scroller .scrollable > div > * {
+  margin: 0 20px;
+  height: 32px;
+}
+
